@@ -5,7 +5,7 @@
 %% 1. Setup parameters
 d = 50;                          % Number of covariates
 beta_true = ones(d + 1, 1);     % True coefficients (intercept + 50 slopes)
-n = 5000;                        % Full dataset size
+n = 500000;                        % Full dataset size
 k = 100;                         % Desired subdata size
 noise_sd = 3;                    % Standard deviation of the error term
 

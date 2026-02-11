@@ -92,6 +92,6 @@ for (k in seq_along(files)) {
 }
 
 # --- Write results to CSV ---
-write.csv(resultsIBOSS, file.path("Results", "IBOSS_10M_NoK.csv"), row.names = FALSE)
+write.csv(resultsIBOSS, file.path("Results", "R_IBOSS_10M_NoK.csv"), row.names = FALSE)
 
 cat("Results written to Results/IBOSS_10M_NoK.csv\n")

@@ -29,7 +29,7 @@ for k = 1:length(d)
 
              time_IBOSS               = 0;
              tic
-             fit                      = iboss_od(X.', ones(m,1), N);
+             fit                      = iboss_od_mex(X.', ones(m,1), N);
              time_IBOSS               = time_IBOSS + toc;
              X_S                      = X(:,fit.index);
              obj_IBOSS                = log(det(X_S*X_S.'));
@@ -45,4 +45,4 @@ for k = 1:length(d)
           
 end
 
-writetable(resultsIBOSS, '../Results/IBOSS_10M_NoK.csv');
+writetable(resultsIBOSS, '../Results/IBOSS_10M_NoK_mex.csv');
